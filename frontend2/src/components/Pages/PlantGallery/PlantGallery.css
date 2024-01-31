@@ -1,0 +1,145 @@
+.itemContainer{
+    cursor: pointer;
+    position:relative;
+    height: 300;
+    width: 220px;
+    /* background-color: #264933; */
+    background-color: #52734D;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: max-height 1s ease-in-out, width 1s ease-in-out, height 1s ease-in-out;
+    max-height: 400px;
+    overFlow: contain;
+
+}
+
+.itemContainer.active{
+    padding-right: 20px;
+    z-index: 2;
+    height: auto;
+    max-height: 1000px;
+    text-align: left;
+}
+
+.active{
+    max-height:800px;
+    width:800px;
+}
+
+.imageContainerContainer{
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 10px;
+    
+}
+.imageContainerContainer.active {
+    background-color: #BFD2BC;    
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imageContainerContainer.active .itemLabel{
+    margin-left: 6%;
+    border: solid;
+    border-width: 1px;
+    border-color: #52734D;
+    color: #0c230d;
+    
+}
+.imageContainer{
+    background-color: #BFD2BC;
+    border-radius: 10px;
+    height: 250px;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 250px;
+    transition: max-height 1s ease-in-out, width 1s ease-in-out;
+}
+
+.imageContainer.active{
+    max-height: 800px;
+    height: 400px;
+    width: 400px;
+    border: solid;
+    border-width: 1px;
+    border-color: #52734D;
+}
+
+.imageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    float: center;
+    bottom: 0;
+    left: 0;
+}
+
+.informationContainer{
+    transition: max-height 1s ease-in, width 1s ease-in-out, height 1s ease-in-out, position 1s ease-in-out, opacity 2s ease;
+    opacity: 0;
+    border-radius: 10px;
+    /* color:'white'; */
+    color: #0c230d;   
+    width: 200px;
+    margin-right: 5px;
+    max-height: 200px;
+    /* z-index: 1; */
+}
+
+.informationContainer.active {
+    position: absolute;
+    /* float:'right'; */
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-align:left;
+    width: 350px;
+    max-height: 1000px;
+    opacity: 1;
+    color: #0c230d;   
+    /* background-color: #52734D; */
+    background-color: #BFD2BC;
+    z-index: 10;
+
+    /* box-shadow: 0px 1px 15px #162939; */
+}
+
+.conditional *{
+    color: #0c230d;   
+    text-align: left;
+}
+
+.itemLabel {
+    /* margin-top: 3px; */
+    width: 80%;
+    max-width: 300px;
+    /* background-color: rgba(255, 255, 255, 1); */
+    color: white;
+    color:'white';
+    /* color: #52734D; */
+    text-align: center;
+    position: static;
+    border-radius: 5px;
+    font-size: 18px;
+    /* padding: 5px; */
+    /* margin-left: 10%; */
+}
+
+.informationContainer.active div{
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.plantImage{
+    -webkit-user-drag: none;
+}

@@ -1,0 +1,33 @@
+
+.image{
+    position:absolute;
+    user-select:none;
+    
+}
+
+.item:hover  {
+    position: absolute;
+    border: 2px;
+    /* padding: 10px; */
+    /* border-color: black; */
+    /* width: 200px; */
+    /* height: 200px; */
+    /* bottom: 0; */
+    /* right: 0; */
+   
+    display: block;
+    background-color: rgba(255, 170, 0, 0.254) ;
+    transition: background-color ease-in-out 0.2s;
+    object-fit: contain;
+}
+
+.selectedItem {
+    border: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    background-color: none;
+}
+
+.arrowIcon:hover .cursor {
+    transform:translate(-50%,-50%) , scale(8)
+}
